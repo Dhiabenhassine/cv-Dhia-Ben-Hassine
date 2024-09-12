@@ -15,18 +15,18 @@
 </head>
 <body>
 	<article class="resume-wrapper text-center position-relative">
-		<div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+		<!-- English Version -->
+		<div id="english-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
 			<header class="resume-header pt-4 pt-md-0">
 				<div class="media flex-column flex-md-row">
 					<img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
 					<div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-						<!-- Personal info -->
 						<div class="primary-info">
 							<h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
 							<div class="title mb-3">Backend Developer</div>
 							<ul class="list-unstyled">
 								<li class="mb-2">
-									<a href="mailto:joel.torrejon.mendez@gmail.com"><i
+									<a href="mailto:benhassine.med.dhia@gmail.com"><i
 											class="far fa-envelope fa-fw mr-2"
 											data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
 								</li>
@@ -36,13 +36,12 @@
 								</li>
 							</ul>
 						</div>
-						<!-- Media info -->
 						<div class="secondary-info ml-md-auto mt-2">
 							<ul class="resume-social list-unstyled">
 								<li class="mb-3">
 									<a href="" target="_blank"><span
 											class="fa-container text-center mr-2"><i
-												class="fa fa-address-book"></i></span>Nabeul,Tunisia</a>
+												class="fa fa-address-book"></i></span>Nabeul, Tunisia</a>
 								</li>
 								<li class="mb-3">
 									<a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
@@ -54,8 +53,10 @@
 											class="fa-container text-center mr-2"><i
 												class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
 								</li>
-								
 							</ul>
+							<button id="toggle-cv" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
+								CV Français
+							</button>
 						</div>
 					</div>
 				</div>
@@ -434,12 +435,411 @@
 				</div>
 			</div>
 		</div>
-	</article>
-	<!-- Footer -->
-	<!-- <footer class="footer text-center pt-2 pb-5">
-		<small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-			target="_blank">Xiaoying Riley</a> for developers</small>
-	</footer> -->
-</body>
+		</div>
 
+		<!-- French Version -->
+		<div id="french-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg" style="display: none;">
+			<header class="resume-header pt-4 pt-md-0">
+				<div class="media flex-column flex-md-row">
+					<img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
+					<div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+						<div class="primary-info">
+							<h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
+							<div class="title mb-3">Développeur Back-end</div>
+							<ul class="list-unstyled">
+								<li class="mb-2">
+									<a href="mailto:benhassine.med.dhia@gmail.com"><i
+											class="far fa-envelope fa-fw mr-2"
+											data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
+								</li>
+								<li>
+									<a href="tel:+59167993065"><i class="fas fa-mobile-alt fa-fw mr-2"
+											data-fa-transform="grow-6"></i>00216 90 117 343</a>
+								</li>
+							</ul>
+						</div>
+						<div class="secondary-info ml-md-auto mt-2">
+							<ul class="resume-social list-unstyled">
+								<li class="mb-3">
+									<a href="" target="_blank"><span
+											class="fa-container text-center mr-2"><i
+												class="fa fa-address-book"></i></span>Nabeul, Tunisia</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
+											class="fa-container text-center mr-2"><i
+												class="fab fa-linkedin-in fa-fw"></i></span>bhmeddhiaa</a>
+								</li>
+								<li class="mb-3">
+									<a href="https://github.com/Dhiabenhassine" target="_blank"><span
+											class="fa-container text-center mr-2"><i
+												class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
+								</li>
+							</ul>
+							<button id="toggle-cv-back" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
+								CV Anglais
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="resume-body p-5">
+				<!-- Career summary -->
+				<section class="resume-section summary-section mb-5">
+					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+					<div class="resume-section-content">
+						<p class="mb-0">
+							Avec plusieurs années d'expérience en tant que développeur, je suis motivé par constant de l'apprentissage et de l'innovation.
+Ma carrière est marquée par des efforts collaboratifs pour développer des applications web et améliorer la qualité des produits grâce à l'optimisation du code et à la résolution proactive des problèmes.	</p>
+					</div>
+				</section>
+				<!-- Main content -->
+				<div class="row">
+					<!-- Left side -->
+					<div class="col-lg-9">
+						<!-- Work experience -->
+						<section class="resume-section experience-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Expérience Professionnelle</h2>
+							<div class="resume-section-content">
+								<div class="resume-timeline position-relative">
+									
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Chef de Projet
+												</h3>
+												<div class="resume-company-name ml-auto">Digitales Native</div>
+											</div>
+											<div class="resume-position-time">12-2023 - Aujourd'hui</div>
+										</div>
+										<div class="resume-timeline-item-desc">
+											<ul> <li>Définition de la Portée du Projet : Travailler en étroite collaboration avec les fondateurs et les parties prenantes pour définir les objectifs du projet, les livrables, les délais et les critères de succès.</li>
+												 <li>Planification des Sprints : Diriger les sessions de planification des sprints, en veillant à ce que l'équipe ait des tâches claires et exploitables et comprenne les priorités.</li> 
+												 <li>Revues et Rétrospectives des Itérations : Effectuer des revues et des rétrospectives régulières pour évaluer les progrès, recueillir des retours d'information et améliorer continuellement les processus.</li> 
+												 <li>Collaboration Équipe : Faciliter la collaboration entre le développement, le design, le marketing et les ventes pour garantir que les objectifs du projet sont atteints de manière cohérente.</li> </ul>
+											<a href="https://digitalnatives.team/">Digital Natives Web Site</a>
+										</div>
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
+												</h3>
+												<div class="resume-company-name ml-auto">Digitales Native</div>
+											</div>
+											<div class="resume-position-time">02-2023 - 11-2023</div>
+										</div>
+										<div class="resume-timeline-item-desc">
+											<ul> <li>Développer le backend pour une application web similaire à Airbnb en utilisant Node.js, Express.js et Sequelize. Implémenter des APIs telles que OpenAI et FastForex.</li> 
+												<li>Effectuer des tests unitaires sur le serveur en utilisant Termius.</li> 
+												<li>Documenter le projet en utilisant APIDOG.com.</li>
+												 <li>Développer un tableau de bord administrateur avec un modèle Material UI.</li> </ul>
+											<a href="http://superhost.com.tn">superhost.com.tn</a>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">NodeJS</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Express</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Sequelize</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JavaScript</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JWT</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">React</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Material UI</span>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="resume-timeline-item position-relative">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
+													<small class="text-muted">Freelance (Tableau de bord de magasin de ventes)</small></h3>
+											</div>
+											<div class="resume-position-time">10-2023 </div>
+										</div>
+										<div class="resume-timeline-item-desc">
+											<ul> <li>Développer le backend pour un tableau de bord administrateur en utilisant Node.js, Express.js et Sequelize.</li> 
+												<li>Développer un tableau de bord administrateur avec un modèle Material UI.</li> </ul>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">NodeJS</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Express</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Sequelize</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JavaScript</span>
+												</li>
+												
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">React</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Material UI</span>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
+												</h3>
+												<div class="resume-company-name ml-auto">RebootKamp (RBK)</div>
+											</div>
+											<div class="resume-position-time">08-2022 - 02-2023</div>
+										</div>
+										<div class="resume-timeline-item-desc">
+											<ul> <li>Intégrer Cloudinary avec React Native et Google Maps.</li> 
+												<li>Développer le backend pour l'application mobile en utilisant Node.js, Express.js et Sequelize.</li> 
+												<li>Concevoir et développer un tableau de bord administrateur.</li> 
+												<li>Collaborer à l'analyse des données et améliorer les requêtes SQL de bases de données à fort volume.</li> </ul>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">React Native</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">NodeJS</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Express</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">Sequelize</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JavaScript</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JWT</span>
+												</li>
+											</ul>
+										</div>
+									</article>
+									<article class="resume-timeline-item position-relative pb-5">
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
+												</h3>
+												<div class="resume-company-name ml-auto">PROMOCUISINE ( Cuisina + Marmotek)</div>
+											</div>
+											<div class="resume-position-time">06-2020 - 08-2022</div>
+										</div>
+										<div class="resume-timeline-item-desc">
+											<!-- <p>
+												For almost two years I was working for an American Software Development Company.
+											</p> -->
+											<ul> <li>Affiche les principaux indicateurs de vente tels que les ventes totales, le nombre d'affaires conclues et les produits les plus performants.</li> 
+												<li>Montre les représentants commerciaux les plus performants en fonction de divers critères.</li> 
+												<li>Une section pour gérer la liste des produits/services, y compris les détails tels que les prix et les descriptions.</li> </ul>
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+											<ul class="list-inline">
+												
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">JavaScript</span>
+												</li>
+												<li class="list-inline-item">
+													<span class="badge badge-primary badge-pill">React</span>
+												</li>
+											</ul>
+										</div>
+									</article>
+								
+								
+								</div>
+							</div>
+						</section>
+						<!-- Other projects -->
+					
+					</div>
+					<!-- Right side -->
+					<div class="col-lg-3">
+						<!-- Language skills -->
+						<section class="resume-section language-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Langue</h2>
+							<div class="resume-section-content">
+								<ul class="list-unstyled resume-lang-list">
+									<li>
+										<span class="resume-lang-name font-weight-bold">Français</span>
+									</li>
+									<li class="mb-2">
+										<span class="resume-lang-name font-weight-bold">Anglais</span>
+									</li>
+									<li class="mb-2">
+										<span class="resume-lang-name font-weight-bold">Arabe</span>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<!-- Education -->
+						<section class="resume-section education-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Éducation</h2>
+							<div class="resume-section-content">
+								<ul class="list-unstyled">
+									<li class="mb-2">
+										<div class="resume-degree font-weight-bold">Full Stack Javascript Developer</div>
+										<div class="resume-degree-org">RebootKamp (RBK)</div>
+									</li>
+									<li class="mb-2">
+										<div class="resume-degree font-weight-bold">Master en gestion de la qualité, de la sécurité et de l'environnement</div>
+										<div class="resume-degree-org">Leaders University -Tunisia</div>
+									</li>
+									<li class="mb-2">
+										<div class="resume-degree font-weight-bold">
+											Licence en économie internationale et finance</div>
+										<div class="resume-degree-org">FSEG - Tunisia</div>
+									</li>
+									<li class="mb-2">
+										<div class="resume-degree font-weight-bold">Baccalauréat</div>
+										<div class="resume-degree-org">Lycée 7 November- Tunisia</div>
+									</li>
+									
+								</ul>
+							</div>
+						</section>
+						<!-- Skills  -->
+						<section class="resume-section skills-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Langages de Programmation</h2>
+							<div class="resume-section-content">
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">Front-end</h4>
+									<ul class="list-unstyled mb-4">
+										<li class="mb-2">
+											<div class="resume-skill-name">React Native / React</div>
+											
+												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+											
+											
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Next.js</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">JavaScript</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">TypeScript</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+									
+									</ul>
+								</div>
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">Back-end</h4>
+									<ul class="list-unstyled">
+										<li class="mb-2">
+											<div class="resume-skill-name">Node JS</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">Express JS</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+										<li class="mb-2">
+											<div class="resume-skill-name">MYSQL, Sequelize, MongoDB</div>
+											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+													aria-valuemax="100"></div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="resume-skill-item">
+									<h4 class="resume-skills-cat font-weight-bold">Divers</h4>
+									<ul class="list-inline">
+										<li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Unlayer</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Termius</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">phpMyAdmin</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">ApiDog</span></li>
+										<li class="list-inline-item"><span class="badge badge-light">Jira</span></li>
+
+									</ul>
+								</div>
+							</div>
+						</section>
+						<!-- <section class="resume-section reference-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
+							<div class="resume-section-content">
+								<ul class="list-unstyled resume-awards-list">
+									<li class="mb-2 pl-4 position-relative">
+										<i class="resume-award-icon fas fa-trophy position-absolute"
+											data-fa-transform="shrink-2"></i>
+										<div class="resume-award-name">Award Name Lorem</div>
+										<div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque
+											eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+										</div>
+									</li>
+									<li class="mb-0 pl-4 position-relative">
+										<i class="resume-award-icon fas fa-trophy position-absolute"
+											data-fa-transform="shrink-2"></i>
+										<div class="resume-award-name">Award Name Ipsum</div>
+										<div class="resume-award-desc">Award desc goes here, ultricies nec,
+											pellentesque.</div>
+									</li>
+								</ul>
+							</div>
+						</section> -->
+						<!-- Hobbies -->
+						<section class="resume-section interests-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Compétences</h2>
+							<div class="resume-section-content">
+								<ul class="list-unstyled"> 
+									<li class="mb-1">Résolution de problèmes</li> 
+									<li class="mb-1">Travail en équipe</li>
+									<li class="mb-1">communication</li>
+									 <li class="mb-1">Créativité</li>
+									 <li class="mb-1">Interaction avec les clients</li> 
+									 <li class="mb-1">Documentation</li> 
+									<li class="mb-1">Gestion de projet</li> </ul>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</article>
+
+	<script>
+		document.getElementById('toggle-cv').addEventListener('click', function() {
+			document.getElementById('english-cv').style.display = 'none';
+			document.getElementById('french-cv').style.display = 'block';
+		});
+
+		document.getElementById('toggle-cv-back').addEventListener('click', function() {
+			document.getElementById('french-cv').style.display = 'none';
+			document.getElementById('english-cv').style.display = 'block';
+		});
+	</script>
+</body>
 </html>
