@@ -389,7 +389,7 @@ $(function () {
       .appendTo('#qunit-fixture')
       .on('shown.bs.collapse', function () {
         assert.strictEqual($target.attr('aria-expanded'), 'true', 'aria-expanded on trigger/control is "true"')
-        assert.strictEqual($alt.attr('aria-expanded'), 'true', 'aria-expanded on alternative trigger/control is "true"')
+        assert.strictEqual($alt.attr('aria-expanded'), 'true', 'aria-expanded on alterNatives trigger/control is "true"')
         done()
       })
 
@@ -407,7 +407,7 @@ $(function () {
       .appendTo('#qunit-fixture')
       .on('hidden.bs.collapse', function () {
         assert.strictEqual($target.attr('aria-expanded'), 'false', 'aria-expanded on trigger/control is "false"')
-        assert.strictEqual($alt.attr('aria-expanded'), 'false', 'aria-expanded on alternative trigger/control is "false"')
+        assert.strictEqual($alt.attr('aria-expanded'), 'false', 'aria-expanded on alterNatives trigger/control is "false"')
         done()
       })
 
