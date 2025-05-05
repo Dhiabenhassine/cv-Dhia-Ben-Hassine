@@ -55,11 +55,11 @@
             font-size: 14px;
             line-height: 1.5;
             text-align: center;
-            border: 1px solid #cbd5e0;
+            border: 1px solid #ffffff;
             border-radius: 4px;
-            background-color: #fff;
-            color: #4a5568;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            background-color: #2d3748;
+            color: #ffffff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
             transition: all 0.2s ease;
             cursor: pointer;
         }
@@ -67,7 +67,7 @@
         .icon-button:hover {
             color: #fff;
             background-color: #2d3748;
-            border-color: #2d3748;
+            border-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -104,10 +104,10 @@
                         <div class="secondary-info ml-md-auto mt-2">
 							
                             <ul class="resume-social list-unstyled">
-								<button id="download-pdf-en" class="tooltip icon-button download-button" type="button" aria-label="Download English PDF">
+								<a href="Dhia.pdf" download="Mohamed Dhia Ben Hassine.pdf" class="tooltip icon-button download-button" type="button" aria-label="Download English PDF">
 									<i class="fas fa-download"></i> 
 									<span class="tooltiptext">Download</span>
-								</button>
+                                </a>
                                 <li class="mb-3">
                                     <a href="#"><span class="fa-container text-center mr-2"><i
                                                 class="fa fa-address-book"></i></span>Porto, Portugal</a>
@@ -930,29 +930,7 @@
             document.getElementById('english-cv').style.display = 'block';
         });
 
-        document.getElementById('download-pdf-en').addEventListener('click', function() {
-            const element = document.getElementById('english-cv');
-            const opt = {
-                margin: 10,
-                filename: 'Mohamed_Dhia_Ben_Hassine_Resume_EN.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            html2pdf().from(element).set(opt).save();
-        });
-
-        document.getElementById('download-pdf-fr').addEventListener('click', function() {
-            const element = document.getElementById('french-cv');
-            const opt = {
-                margin: 10,
-                filename: 'Mohamed_Dhia_Ben_Hassine_Resume_FR.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2 },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            html2pdf().from(element).set(opt).save();
-        });
+       
     </script>
 </body>
 </html>
