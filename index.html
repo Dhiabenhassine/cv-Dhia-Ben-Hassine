@@ -1,1121 +1,958 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>BEN HASSINE MOHAMED DHIA</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="BEN HASSINE MOHAMED DHIA Resume">
-	<meta name="author" content="BEN HASSINE MOHAMED DHIA">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
-		integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
-		crossorigin="anonymous"></script>
-	<link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+    <title>BEN HASSINE MOHAMED DHIA</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEN HASSINE MOHAMED DHIA Resume">
+    <meta name="author" content="BEN HASSINE MOHAMED DHIA">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+        integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+    <style>
+        /* Tooltip container */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 1000; /* Ensure button is above other elements */
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 100px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1001; /* Above the button */
+            bottom: 125%; /* Position above the button */
+            left: 50%;
+            margin-left: -50px; /* Center the tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Show tooltip on hover */
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Button styling */
+        .icon-button {
+            display: inline-block; /* Ensure button is visible */
+            padding: 2px 4px;
+            margin-top: -12px; /* Space from toggle button */
+			left:150px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: center;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #4a5568;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .icon-button:hover {
+            color: #fff;
+            background-color: #2d3748;
+            border-color: #2d3748;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ensure button is not hidden by external CSS */
+        .download-button {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+    </style>
 </head>
 <body>
-	<article class="resume-wrapper text-center position-relative">
-		<!-- English Version -->
-		<div id="english-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
-			<header class="resume-header pt-4 pt-md-0">
-				<div class="media flex-column flex-md-row">
-					<img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
-					<div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-						<div class="primary-info">
-							<h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
-							<div class="title mb-3">Full-Stack Developer</div>
-							<ul class="list-unstyled">
-								<li class="mb-2">
-									<a href="mailto:benhassine.med.dhia@gmail.com"><i
-											class="far fa-envelope fa-fw mr-2"
-											data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
-								</li>
-								<li>
-									<a href="tel:+59167993065"><i class="fas fa-mobile-alt fa-fw mr-2"
-											data-fa-transform="grow-6"></i>00351 93 704 0156</a>
-								</li>
-							</ul>
-						</div>
-						<div class="secondary-info ml-md-auto mt-2">
-							<ul class="resume-social list-unstyled">
-								<li class="mb-3">
-									<a href="" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fa fa-address-book"></i></span>Porto, Portugal</a>
-								</li>
-								<li class="mb-3">
-									<a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fab fa-linkedin-in fa-fw"></i></span>bhmeddhiaa</a>
-								</li>
-								<li class="mb-3">
-									<a href="https://github.com/Dhiabenhassine" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
-								</li>
-							</ul>
-							<button id="toggle-cv" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
-								Version Français
-							</button>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="resume-body p-5">
-				<!-- Career summary -->
-				<section class="resume-section summary-section mb-5">
-					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
-					<div class="resume-section-content">
-						<p class="mb-0">
-							With years of experience as a developer, i'm driven by a continual love of leaning and innovation.
-							My career is marked by collaborative efforts to develop web-based applications and improve product quality through code optimisation and proactive problem-solving
-						</p>
-					</div>
-				</section>
-				<!-- Main content -->
-				<div class="row">
-					<!-- Left side -->
-					<div class="col-lg-9">
-						<!-- Work experience -->
-						<section class="resume-section experience-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Professional
-								Experience</h2>
-							<div class="resume-section-content">
-								<div class="resume-timeline position-relative">
-									<article class="resume-timeline-item position-relative">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Freelance
-													</h3>
-												</div>
-												<h3 class="resume-position-title  mb-1">Full-Stack Developer
-													</h3>
-											<div class="resume-position-time">12-2024 - Present </div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<h6>Frontend Development:
-												</h6>
-												<li>Develop the Fantasy Tunisia mobile application using React Natives for cross-platform compatibility (iOS and Android).</li>
-												<li>Design and develop a high-performance, user-friendly mobile application using React Natives.</li>
-												<h6>Backend Development:
-												</h6>
-												<li>Develop and maintain a scalable backend using GoLang.
-												</li>
-												<li>Implement RESTful APIs to handle user data, team management, and real-time updates.
-												</li>
-												<li>Ensure secure and efficient data handling with Supabase.
-												</li>
-												<h6>Integration:
-												</h6>
-												<li>Integrate frontend and backend components effectively to deliver a cohesive product.
-												</li>
-												<li>Work with third-party APIs and libraries to enhance the application’s functionality.Address and resolve application issues promptly.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">GoLang</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React Natives</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">SupaBase</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Expo Go</span>
-												</li>
-												
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Backend Developer</h3>
-												<div class="resume-company-name ml-md-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time">08-2024 - 11-2024</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Designed and developed RESTful APIs to handle requests and responses efficiently.</li>
-												<li>Designed and maintained relational database schemas in MySQL.</li>
-												<li>Used tools like APIDOG.com for documenting APIs.</li>
-												<li>Performed unit tests on the server using Termius.</li>
-											</ul>
-											<a href="https://kuda-ai.com/" target="_blank" rel="noopener noreferrer">Kuda Website</a>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-												
-												
-											</ul>
-										</div>
-										
-									</article>
-									
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Project Manager
-												</h3>
-												<div class="resume-company-name ml-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time">12-2023 - 08-2024</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Defining Project Scope: Work closely with founders and stakeholders to define project goals,
-													 deliverables, timelines, and success criteria.</li>
-												<li>Sprint Planning: Lead sprint planning sessions, ensuring that the team has clear,
-													 actionable tasks and understands priorities.</li>
-												<li>Iteration Reviews and Retrospectives: Conduct regular reviews and retrospectives to evaluate progress, 
-													gather feedback, and continuously improve processes.</li>
-													<li>Team Collaboration: Facilitate collaboration between development, 
-														design, marketing, and sales to ensure that project goals are met cohesively.</li>
-											</ul>
-											<a href="https://DigitalNativess.team/">Digital Natives Web Site</a>
-										</div>
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Full-Stack Developer
-												</h3>
-												<div class="resume-company-name ml-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time ">02-2023 - 11-2023</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Develop the backend for a web application similar to
-													Airbnb using Node.js, Express.js and Sequelize. Imple-
-													ment APIs such as OpenAI and FastForex.</li>
-												<li>Perform unit tests on the server using Termius.</li>
-												<li>Document the project using APIDOG.com.</li>
-												<li>Develop an admin dashboard with a Material UI template.</li>
-											</ul>
-											<a href="http://superhost.com.tn">superhost.com.tn</a>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article class="resume-timeline-item position-relative">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Freelance
-													</h3>
-													<div class="resume-company-name ml-auto">08-2022 - 10-2023</div>
+    <article class="resume-wrapper text-center position-relative">
+        <!-- English Version -->
+        <div id="english-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
+            <header class="resume-header pt-4 pt-md-0">
+                <div class="media flex-column flex-md-row">
+                    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
+                    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+                        <div class="primary-info">
+                            <h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
+                            <div class="title mb-3">Full-Stack Developer</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="mailto:benhassine.med.dhia@gmail.com"><i
+                                            class="far fa-envelope fa-fw mr-2"
+                                            data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+351937040156"><i class="fas fa-mobile-alt fa-fw mr-2"
+                                            data-fa-transform="grow-6"></i>00351 93 704 0156</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="secondary-info ml-md-auto mt-2">
+							
+                            <ul class="resume-social list-unstyled">
+								<button id="download-pdf-en" class="tooltip icon-button download-button" type="button" aria-label="Download English PDF">
+									<i class="fas fa-download"></i> 
+									<span class="tooltiptext">Download</span>
+								</button>
+                                <li class="mb-3">
+                                    <a href="#"><span class="fa-container text-center mr-2"><i
+                                                class="fa fa-address-book"></i></span>Porto, Portugal</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
+                                            class="fa-container text-center mr-2"><i
+                                                class="fab fa-linkedin-in fa-fw"></i></span>bhmeddhiaa</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="https://github.com/Dhiabenhassine" target="_blank"><span
+                                            class="fa-container text-center mr-2"><i
+                                                class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
+                                </li>
+                            </ul>
+                            <button id="toggle-cv" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
+                                Version Français
+                            </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="resume-body p-5">
+                <!-- Career summary -->
+                <section class="resume-section summary-section mb-5">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
+                    <div class="resume-section-content">
+                        <p class="mb-0">
+                            With years of experience as a developer, I'm driven by a continual love of learning and innovation.
+                            My career is marked by collaborative efforts to develop web-based applications and improve product quality through code optimisation and proactive problem-solving.
+                        </p>
+                    </div>
+                </section>
+                <!-- Main content -->
+                <div class="row">
+                    <!-- Left side -->
+                    <div class="col-lg-9">
+                        <!-- Work experience -->
+                        <section class="resume-section experience-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Professional Experience</h2>
+                            <div class="resume-section-content">
+                                <div class="resume-timeline position-relative">
+                                    <article class="resume-timeline-item position-relative">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Freelance</h3>
+                                            </div>
+                                            <h3 class="resume-position-title mb-1">Full-Stack Developer</h3>
+                                            <div class="resume-position-time">12-2024 - Present</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <h6>Frontend Development:</h6>
+                                                <li>Develop the Fantasy Tunisia mobile application using React Native for cross-platform compatibility (iOS and Android).</li>
+                                                <li>Design and develop a high-performance, user-friendly mobile application using React Native.</li>
+                                                <h6>Backend Development:</h6>
+                                                <li>Develop and maintain a scalable backend using GoLang.</li>
+                                                <li>Implement RESTful APIs to handle user data, team management, and real-time updates.</li>
+                                                <li>Ensure secure and efficient data handling with Supabase.</li>
+                                                <h6>Integration:</h6>
+                                                <li>Integrate frontend and backend components effectively to deliver a cohesive product.</li>
+                                                <li>Work with third-party APIs and libraries to enhance the application’s functionality. Address and resolve application issues promptly.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">GoLang</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React Native</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Supabase</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Expo Go</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Backend Developer</h3>
+                                                <div class="resume-company-name ml-md-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">08-2024 - 11-2024</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Designed and developed RESTful APIs to handle requests and responses efficiently.</li>
+                                                <li>Designed and maintained relational database schemas in MySQL.</li>
+                                                <li>Used tools like APIDOG.com for documenting APIs.</li>
+                                                <li>Performed unit tests on the server using Termius.</li>
+                                            </ul>
+                                            <a href="https://kuda-ai.com/" target="_blank" rel="noopener noreferrer">Kuda Website</a>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Project Manager</h3>
+                                                <div class="resume-company-name ml-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">12-2023 - 08-2024</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Defining Project Scope: Work closely with founders and stakeholders to define project goals, deliverables, timelines, and success criteria.</li>
+                                                <li>Sprint Planning: Lead sprint planning sessions, ensuring that the team has clear, actionable tasks and understands priorities.</li>
+                                                <li>Iteration Reviews and Retrospectives: Conduct regular reviews and retrospectives to evaluate progress, gather feedback, and continuously improve processes.</li>
+                                                <li>Team Collaboration: Facilitate collaboration between development, design, marketing, and sales to ensure that project goals are met cohesively.</li>
+                                            </ul>
+                                            <a href="https://DigitalNativess.team/">Digital Natives Web Site</a>
+                                        </div>
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Full-Stack Developer</h3>
+                                                <div class="resume-company-name ml-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">02-2023 - 11-2023</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Develop the backend for a web application similar to Airbnb using Node.js, Express.js, and Sequelize. Implement APIs such as OpenAI and FastForex.</li>
+                                                <li>Perform unit tests on the server using Termius.</li>
+                                                <li>Document the project using APIDOG.com.</li>
+                                                <li>Develop an admin dashboard with a Material UI template.</li>
+                                            </ul>
+                                            <a href="http://superhost.com.tn">superhost.com.tn</a>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Freelance</h3>
+                                                <div class="resume-company-name ml-auto">08-2022 - 10-2023</div>
+                                            </div>
+                                            <h3 class="resume-position-title mb-1">Project 1: Sales Store Dashboard 
+                                                <small class="text-muted">Full-Stack Developer</small></h3>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Develop the backend for an Admin dashboard using Node.js, Express.js, and Sequelize.</li>
+                                                <li>Develop an admin dashboard with a Material UI template.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title mb-1">Project 2: Tawelti
+                                                    <small class="text-muted">Full-Stack Developer</small>
+                                                </h3>
+                                                <div class="resume-company-name ml-auto">RebootKamp (RBK)</div>
+                                            </div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Integrate Cloudinary with React Native and Google Maps.</li>
+                                                <li>Develop the backend for the mobile application using Node.js, Express.js, and Sequelize.</li>
+                                                <li>Designed and developed an admin dashboard.</li>
+                                                <li>Collaborate on data analysis and improve SQL queries of high volume databases.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React Native</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Full-Stack Developer</h3>
+                                                <div class="resume-company-name ml-auto">PROMOCUISINE (Cuisina + Marmotek)</div>
+                                            </div>
+                                            <div class="resume-position-time">06-2020 - 08-2022</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Displays key sales metrics such as total sales, number of deals closed, and top-performing products.</li>
+                                                <li>Shows the top-performing sales representatives based on various criteria.</li>
+                                                <li>A section to manage the list of products/services, including details like pricing and description.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Right side -->
+                    <div class="col-lg-3">
+                        <!-- Language skills -->
+                        <section class="resume-section language-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled resume-lang-list">
+                                    <li>
+                                        <span class="resume-lang-name font-weight-bold">French</span>
+                                        <div class="resume-degree-org">Fluent</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="resume-lang-name font-weight-bold">English</span>
+                                        <div class="resume-degree-org">Fluent</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="resume-lang-name font-weight-bold">Arabic</span>
+                                        <div class="resume-degree-org">Native Language</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Education -->
+                        <section class="resume-section education-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Full Stack Javascript Developer</div>
+                                        <div class="resume-degree-org">RebootKamp (RBK)</div>
+                                        <div class="resume-degree-org">08/2022 - 02/2023</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Master degree in quality, safety and environment management</div>
+                                        <div class="resume-degree-org">Leaders University - Tunisia</div>
+                                        <div class="resume-degree-org">09/2014 - 10/2016</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">License in international economics and finance</div>
+                                        <div class="resume-degree-org">Faculty of economics and management - Tunisia</div>
+                                        <div class="resume-degree-org">09/2010 - 06/2013</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Baccalaureate</div>
+                                        <div class="resume-degree-org">High school 7 November - Tunisia</div>
+                                        <div class="resume-degree-org">09/2009 - 06/2010</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Skills -->
+                        <section class="resume-section skills-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Development Stack</h2>
+                            <div class="resume-section-content">
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Programming Languages</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">GoLang</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Python</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">JavaScript</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">TypeScript</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Frontend Libraries & Frameworks</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">React Native / React</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Next.js</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Backend Frameworks & Databases</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Node JS</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Express JS</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">MySQL, Sequelize</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Supabase</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">MongoDB</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Others</h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Unlayer</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Termius</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">phpMyAdmin</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">ApiDog</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Jira</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Docker</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Redux</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Hobbies -->
+                        <section class="resume-section interests-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1">Problem-solving</li>
+                                    <li class="mb-1">Team Work</li>
+                                    <li class="mb-1">Communication skills</li>
+                                    <li class="mb-1">Creativity</li>
+                                    <li class="mb-1">Client Interaction</li>
+                                    <li class="mb-1">Documentation</li>
+                                    <li class="mb-1">Project Management</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-											</div>
-											<h3 class="resume-position-title  mb-1">Project 1 : Sales Store Dashboard 
-												<small class="text-muted">Full-Stack Developer</small></h3>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Develop the backend for an Admin dashboard using Node.js, Express.js, and Sequelize.</li>
-												<li>Develop an admin dashboard with a Material UI template.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article >
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title  mb-1">Project 2 : Tawelti
-													<small class="text-muted">Full-Stack Developer</small>
-												</h3>
-												<div class="resume-company-name ml-auto">RebootKamp (RBK)</div>
-											</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Integrate cloudinary with react Natives and Google maps.</li>
-												<li>Develop the backend for the mobile application using Node.js, Express.js, and Sequelize.</li>
-												<li>Designed and devoloped an admin dashboard.</li>
-												<li>Colaborate on data analisis and improve SQL queries of high volume databases.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React Natives</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Full-Stack Developer
-												</h3>
-												<div class="resume-company-name ml-auto">PROMOCUISINE ( Cuisina + Marmotek)</div>
-											</div>
-											<div class="resume-position-time">06-2020 - 08-2022</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<!-- <p>
-												For almost two years I was working for an American Software Development Company.
-											</p> -->
-											<ul>
-												<li>
-													Displays key sales metrics such as total sales, number of deals closed, and top-performing products.
-												</li>
-												<li>
-													Shows the top-performing sales representatives based on various criteria.
-												</li>
-												<li>
-													A section to manage the list of products/services, including details like pricing and description.
-												</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-											<ul class="list-inline">
-												
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-								
-								
-								</div>
-							</div>
-						</section>
-						<!-- Other projects -->
-					
-					</div>
-					<!-- Right side -->
-					<div class="col-lg-3">
-						<!-- Language skills -->
-						<section class="resume-section language-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled resume-lang-list">
-									<li>
-										<span class="resume-lang-name font-weight-bold">French</span>
-										<div class="resume-degree-org">Fluent</div>
-									</li>
-									<li class="mb-2">
-										<span class="resume-lang-name font-weight-bold">English</span>
-										<div class="resume-degree-org">Fluent</div>
-									</li>
-									<li class="mb-2">
-										<span class="resume-lang-name font-weight-bold">Arabic</span>
-										<div class="resume-degree-org">Natives Language</div>
-									</li>
-								</ul>
-							</div>
-						</section>
-						<!-- Education -->
-						<section class="resume-section education-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Full Stack Javascript Developer</div>
-										<div class="resume-degree-org">RebootKamp (RBK)</div>
-										<div class="resume-degree-org">08/2022 - 02/2023</div>
+        <!-- French Version -->
+        <div id="french-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg" style="display: none;">
+            <header class="resume-header pt-4 pt-md-0">
+                <div class="media flex-column flex-md-row">
+                    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
+                    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+                        <div class="primary-info">
+                            <h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
+                            <div class="title mb-3">Développeur Full-Stack</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="mailto:benhassine.med.dhia@gmail.com"><i
+                                            class="far fa-envelope fa-fw mr-2"
+                                            data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+351937040156"><i class="fas fa-mobile-alt fa-fw mr-2"
+                                            data-fa-transform="grow-6"></i>00351 93 704 0156</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="secondary-info ml-md-auto mt-2">
+                            <ul class="resume-social list-unstyled">
+								<button id="download-pdf-fr" class="tooltip icon-button download-button" type="button" aria-label="Download French PDF">
+									<i class="fas fa-download"></i> 
+									<span class="tooltiptext">Télécharger</span>
+								</button>
+                                <li class="mb-3">
+                                    <a href="#"><span class="fa-container text-center mr-2"><i
+                                                class="fa fa-address-book"></i></span>Porto, Portugal</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
+                                            class="fa-container text-center mr-2"><i
+                                                class="fab fa-linkedin-in fa-fw"></i></span>bhmeddhiaa</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="https://github.com/Dhiabenhassine" target="_blank"><span
+                                            class="fa-container text-center mr-2"><i
+                                                class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
+                                </li>
+                            </ul>
+                            <button id="toggle-cv-back" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
+                                Version Anglais
+                            </button>
+                           
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="resume-body p-5">
+                <!-- Career summary -->
+                <section class="resume-section summary-section mb-5">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Résumé Professionnel</h2>
+                    <div class="resume-section-content">
+                        <p class="mb-0">
+                            Avec plusieurs années d'expérience en tant que développeur, je suis motivé par un amour constant de l'apprentissage et de l'innovation.
+                            Ma carrière est marquée par des efforts collaboratifs pour développer des applications web et améliorer la qualité des produits grâce à l'optimisation du code et à la résolution proactive des problèmes.
+                        </p>
+                    </div>
+                </section>
+                <!-- Main content -->
+                <div class="row">
+                    <!-- Left side -->
+                    <div class="col-lg-9">
+                        <!-- Work experience -->
+                        <section class="resume-section experience-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Expérience Professionnelle</h2>
+                            <div class="resume-section-content">
+                                <div class="resume-timeline position-relative">
+                                    <article class="resume-timeline-item position-relative">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Freelance</h3>
+                                            </div>
+                                            <h3 class="resume-position-title mb-1">Développeur Full-Stack</h3>
+                                            <div class="resume-position-time">12-2024 - Présent</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <h6>Développement Frontend :</h6>
+                                                <li>Développement de l'application mobile Fantasy Tunisia en utilisant React Native pour une compatibilité multiplateforme (iOS et Android).</li>
+                                                <li>Conception et développement d'une application mobile performante et intuitive avec React Native.</li>
+                                                <h6>Développement Backend :</h6>
+                                                <li>Développement et maintenance d'un backend évolutif en utilisant GoLang.</li>
+                                                <li>Mise en œuvre d'API RESTful pour gérer les données utilisateur, la gestion des équipes et les mises à jour en temps réel.</li>
+                                                <li>Assurer une gestion des données sécurisée et efficace avec Supabase.</li>
+                                                <h6>Intégration :</h6>
+                                                <li>Intégration efficace des composants frontend et backend pour offrir un produit cohérent.</li>
+                                                <li>Utilisation d'API tierces et de bibliothèques pour améliorer les fonctionnalités de l’application. Résolution rapide des problèmes liés à l’application.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">GoLang</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React Native</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Supabase</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Expo Go</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Développeur Backend</h3>
+                                                <div class="resume-company-name ml-md-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">08-2024 - 11-2024</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Conception et développement d'API RESTful pour gérer efficacement les requêtes et les réponses.</li>
+                                                <li>Conception et maintenance des schémas de bases de données relationnelles dans MySQL.</li>
+                                                <li>Utilisation d'outils comme APIDOG.com pour documenter les API.</li>
+                                                <li>Réalisation de tests unitaires sur le serveur à l'aide de Termius.</li>
+                                            </ul>
+                                            <a href="https://kuda-ai.com/" target="_blank" rel="noopener noreferrer">Site Web de Kuda</a>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Chef de Projet</h3>
+                                                <div class="resume-company-name ml-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">12-2023 - 08-2024</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Définition de la Portée du Projet : Travailler en étroite collaboration avec les fondateurs et les parties prenantes pour définir les objectifs du projet, les livrables, les délais et les critères de succès.</li>
+                                                <li>Planification des Sprints : Diriger les sessions de planification des sprints, en veillant à ce que l'équipe ait des tâches claires et exploitables et comprenne les priorités.</li>
+                                                <li>Revues et Rétrospectives des Itérations : Effectuer des revues et des rétrospectives régulières pour évaluer les progrès, recueillir des retours d'information et améliorer continuellement les processus.</li>
+                                                <li>Collaboration Équipe : Faciliter la collaboration entre le développement, le design, le marketing et les ventes pour garantir que les objectifs du projet sont atteints de manière cohérente.</li>
+                                            </ul>
+                                            <a href="https://DigitalNativess.team/">Digital Natives Web Site</a>
+                                        </div>
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack</h3>
+                                                <div class="resume-company-name ml-auto">Digital Natives</div>
+                                            </div>
+                                            <div class="resume-position-time">02-2023 - 11-2023</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Développer le backend pour une application web similaire à Airbnb en utilisant Node.js, Express.js et Sequelize. Implémenter des APIs telles que OpenAI et FastForex.</li>
+                                                <li>Effectuer des tests unitaires sur le serveur en utilisant Termius.</li>
+                                                <li>Documenter le projet en utilisant APIDOG.com.</li>
+                                                <li>Développer un tableau de bord administrateur avec un modèle Material UI.</li>
+                                            </ul>
+                                            <a href="http://superhost.com.tn">superhost.com.tn</a>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Freelance</h3>
+                                                <div class="resume-company-name ml-auto">08-2022 - 10-2023</div>
+                                            </div>
+                                            <h3 class="resume-position-title mb-1">Projet 1 : Tableau de bord de magasin de ventes 
+                                                <small class="text-muted">Développeur Full-Stack</small></h3>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Développer le backend pour un tableau de bord administrateur en utilisant Node.js, Express.js et Sequelize.</li>
+                                                <li>Développer un tableau de bord administrateur avec un modèle Material UI.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Material UI</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title mb-1">Projet 2 : Tawelti
+                                                    <small class="text-muted">Développeur Full-Stack</small></h3>
+                                                <div class="resume-company-name ml-auto">RebootKamp (RBK)</div>
+                                            </div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Intégrer Cloudinary avec React Native et Google Maps.</li>
+                                                <li>Développer le backend pour l'application mobile en utilisant Node.js, Express.js et Sequelize.</li>
+                                                <li>Concevoir et développer un tableau de bord administrateur.</li>
+                                                <li>Collaborer à l'analyse des données et améliorer les requêtes SQL de bases de données à fort volume.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React Native</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">NodeJS</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Express</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">Sequelize</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JWT</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article class="resume-timeline-item position-relative pb-5">
+                                        <div class="resume-timeline-item-header mb-2">
+                                            <div class="d-flex flex-column flex-md-row">
+                                                <h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack</h3>
+                                                <div class="resume-company-name ml-auto">PROMOCUISINE (Cuisina + Marmotek)</div>
+                                            </div>
+                                            <div class="resume-position-time">06-2020 - 08-2022</div>
+                                        </div>
+                                        <div class="resume-timeline-item-desc">
+                                            <ul>
+                                                <li>Affiche les principaux indicateurs de vente tels que les ventes totales, le nombre d'affaires conclues et les produits les plus performants.</li>
+                                                <li>Montre les représentants commerciaux les plus performants en fonction de divers critères.</li>
+                                                <li>Une section pour gérer la liste des produits/services, y compris les détails tels que les prix et les descriptions.</li>
+                                            </ul>
+                                            <h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+                                                <li class="list-inline-item"><span class="badge badge-primary badge-pill">React</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Right side -->
+                    <div class="col-lg-3">
+                        <!-- Language skills -->
+                        <section class="resume-section language-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Langue</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled resume-lang-list">
+                                    <li>
+                                        <span class="resume-lang-name font-weight-bold">Français</span>
+                                        <div class="resume-degree-org">Courant</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="resume-lang-name font-weight-bold">Anglais</span>
+                                        <div class="resume-degree-org">Courant</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="resume-lang-name font-weight-bold">Arabe</span>
+                                        <div class="resume-degree-org">Langue Maternelle</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Education -->
+                        <section class="resume-section education-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Éducation</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Full Stack Javascript Developer</div>
+                                        <div class="resume-degree-org">RebootKamp (RBK)</div>
+                                        <div class="resume-degree-org">08/2022 - 02/2023</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Master en gestion de la qualité, de la sécurité et de l'environnement</div>
+                                        <div class="resume-degree-org">Leaders University - Tunisia</div>
+                                        <div class="resume-degree-org">09/2014 - 10/2016</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Licence en économie internationale et finance</div>
+                                        <div class="resume-degree-org">FSEG - Tunisia</div>
+                                        <div class="resume-degree-org">09/2010 - 06/2013</div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <div class="resume-degree font-weight-bold">Baccalauréat en Economie & Gestion</div>
+                                        <div class="resume-degree-org">Lycée 7 November - Tunisia</div>
+                                        <div class="resume-degree-org">09/2009 - 06/2010</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- Skills -->
+                        <section class="resume-section skills-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Development Stack</h2>
+                            <div class="resume-section-content">
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Langages de Programmation</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">GoLang</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Python</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">JavaScript</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">TypeScript</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Bibliothèques & Frameworks Frontend</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">React Native / React</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Next.js</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Frameworks & Bases de Données Backend</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Node JS</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Express JS</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">MySQL, Sequelize</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">Supabase</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                        <li class="mb-2">
+                                            <div class="resume-skill-name">MongoDB</div>
+                                            <div class="progress-bar theme-progress-bar-dark" role="progressbar"
+                                                style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="resume-skill-item">
+                                    <h4 class="resume-skills-cat font-weight-bold">Divers</h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><span class="badge badge-light">Git</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Unlayer</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Termius</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">phpMyAdmin</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">ApiDog</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Jira</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Docker</span></li>
+                                        <li class="list-inline-item"><span class="badge badge-light">Redux</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Hobbies -->
+                        <section class="resume-section interests-section mb-5">
+                            <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Compétences</h2>
+                            <div class="resume-section-content">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1">Résolution de problèmes</li>
+                                    <li class="mb-1">Travail en équipe</li>
+                                    <li class="mb-1">Communication</li>
+                                    <li class="mb-1">Créativité</li>
+                                    <li class="mb-1">Interaction avec les clients</li>
+                                    <li class="mb-1">Documentation</li>
+                                    <li class="mb-1">Gestion de projet</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Master degree in quality, safety and environment management</div>
-										<div class="resume-degree-org">Leaders University -Tunisia</div>
-										<div class="resume-degree-org">09/2014 - 10/2016</div>
+    <script>
+        document.getElementById('toggle-cv').addEventListener('click', function() {
+            document.getElementById('english-cv').style.display = 'none';
+            document.getElementById('french-cv').style.display = 'block';
+        });
 
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">License in international economics and finance</div>
-										<div class="resume-degree-org">Faculty of economics and management - Tunisia</div>
-										<div class="resume-degree-org">09/2010 - 06/2013</div>
+        document.getElementById('toggle-cv-back').addEventListener('click', function() {
+            document.getElementById('french-cv').style.display = 'none';
+            document.getElementById('english-cv').style.display = 'block';
+        });
 
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Baccalaureate</div>
-										<div class="resume-degree-org">High school 7 November- Tunisia</div>
-										<div class="resume-degree-org">09/2009 - 06/2010</div>
+        document.getElementById('download-pdf-en').addEventListener('click', function() {
+            const element = document.getElementById('english-cv');
+            const opt = {
+                margin: 10,
+                filename: 'Mohamed_Dhia_Ben_Hassine_Resume_EN.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().from(element).set(opt).save();
+        });
 
-									</li>
-									<!-- <li>
-										<div class="resume-degree font-weight-bold">Bachelor's Degree</div>
-										<div class="resume-degree-org">Octavio Campero Echazú</div>
-										<div class="resume-degree-time">1998 - 2010</div>
-									</li> -->
-								</ul>
-							</div>
-						</section>
-						<!-- Skills  -->
-						<section class="resume-section skills-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Development Stack</h2>
-							<div class="resume-section-content">
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Programming Languages</h4>
-									<ul class="list-unstyled mb-4">
-										<li class="mb-2"></li>
-											<div class="resume-skill-name">GoLang</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Python</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">JavaScript</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">TypeScript</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-									
-									</ul>
-								</div>
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Frontend Libraries & Frameworks</h4>
-									<ul class="list-unstyled mb-4">
-										<li class="mb-2">
-											<div class="resume-skill-name">React Natives / React</div>
-											
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											
-											
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Next.js</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										
-									
-									</ul>
-								</div>
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Backend Frameworks & Databases
-
-									</h4>
-									<ul class="list-unstyled">
-										<li class="mb-2">
-											<div class="resume-skill-name">Node JS</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Express JS</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">MYSQL, Sequelize</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">SupaBase</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name"> MongoDB</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Others</h4>
-									<ul class="list-inline">
-										<li class="list-inline-item"><span class="badge badge-light">Git</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Unlayer</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Termius</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">phpMyAdmin</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">ApiDog</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Jira</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Docker</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Redux</span></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<!-- <section class="resume-section reference-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled resume-awards-list">
-									<li class="mb-2 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Lorem</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque
-											eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-										</div>
-									</li>
-									<li class="mb-0 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Ipsum</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec,
-											pellentesque.</div>
-									</li>
-								</ul>
-							</div>
-						</section> -->
-						<!-- Hobbies -->
-						<section class="resume-section interests-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled">
-									<li class="mb-1">Problem-solving</li>
-									<li class="mb-1">Team Work</li>
-									<li class="mb-1">Communication skills</li>
-									<li class="mb-1">Creativity </li>
-									<li class="mb-1">Client Interaction </li>
-									<li class="mb-1">Documentaion </li>
-									<li class="mb-1"> Project Management </li>
-
-								</ul>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-
-		<!-- French Version -->
-		<div id="french-cv" class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg" style="display: none;">
-			<header class="resume-header pt-4 pt-md-0">
-				<div class="media flex-column flex-md-row">
-					<img class="mr-3 img-fluid picture mx-auto" src="assets/images/dhia.png" alt="" style="max-width: 198px; height: auto;">
-					<div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
-						<div class="primary-info">
-							<h1 class="name mt-0 mb-1 text-white text-uppercase">BEN HASSINE MOHAMED DHIA</h1>
-							<div class="title mb-3">Développeur Full-Stack</div>
-							<ul class="list-unstyled">
-								<li class="mb-2">
-									<a href="mailto:benhassine.med.dhia@gmail.com"><i
-											class="far fa-envelope fa-fw mr-2"
-											data-fa-transform="grow-3"></i>benhassine.med.dhia@gmail.com</a>
-								</li>
-								<li>
-									<a href="tel:+59167993065"><i class="fas fa-mobile-alt fa-fw mr-2"
-											data-fa-transform="grow-6"></i>00351 93 704 0156</a>
-								</li>
-							</ul>
-						</div>
-						<div class="secondary-info ml-md-auto mt-2">
-							<ul class="resume-social list-unstyled">
-								<li class="mb-3">
-									<a href="" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fa fa-address-book"></i></span>Porto, Portugal</a>
-								</li>
-								<li class="mb-3">
-									<a href="https://www.linkedin.com/in/bhmeddhiaa/" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fab fa-linkedin-in fa-fw"></i></span>bhmeddhiaa</a>
-								</li>
-								<li class="mb-3">
-									<a href="https://github.com/Dhiabenhassine" target="_blank"><span
-											class="fa-container text-center mr-2"><i
-												class="fab fa-github-alt fa-fw"></i></span>Dhiabenhassine</a>
-								</li>
-							</ul>
-							<button id="toggle-cv-back" class="rounded-md border border-slate-300 py-2 px-4 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800" type="button">
-								Version Anglais
-							</button>
-						</div>
-					</div>
-				</div>
-			</header>
-			<div class="resume-body p-5">
-				<!-- Career summary -->
-				<section class="resume-section summary-section mb-5">
-					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Résumé Professionnel</h2>
-					<div class="resume-section-content">
-						<p class="mb-0">
-							Avec plusieurs années d'expérience en tant que développeur, je suis motivé par constant de l'apprentissage et de l'innovation.
-Ma carrière est marquée par des efforts collaboratifs pour développer des applications web et améliorer la qualité des produits grâce à l'optimisation du code et à la résolution proactive des problèmes.	</p>
-					</div>
-				</section>
-				<!-- Main content -->
-				<div class="row">
-					<!-- Left side -->
-					<div class="col-lg-9">
-						<!-- Work experience -->
-						<section class="resume-section experience-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Expérience Professionnelle</h2>
-							<div class="resume-section-content">
-								<div class="resume-timeline position-relative">
-									<article class="resume-timeline-item position-relative">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Freelance
-													</h3>
-													
-											</div>
-											<h3 class="resume-position-title  mb-1">Développeur Full-Stack
-												</h3>
-											<div class="resume-position-time">12-2024 - Présent</div>
-										</div>
-										
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<h6>Développement Frontend :</h6>
-												<li>Développement de l'application mobile Fantasy Tunisia en utilisant React Natives pour une compatibilité multiplateforme (iOS et Android).</li>
-												<li>Conception et développement d'une application mobile performante et intuitive avec React Natives.</li>
-												
-												<h6>Développement Backend :</h6>
-												<li>Développement et maintenance d'un backend évolutif en utilisant GoLang.</li>
-												<li>Mise en œuvre d'API RESTful pour gérer les données utilisateur, la gestion des équipes et les mises à jour en temps réel.</li>
-												<li>Assurer une gestion des données sécurisée et efficace avec Supabase.</li>
-												
-												<h6>Intégration :</h6>
-												<li>Intégration efficace des composants frontend et backend pour offrir un produit cohérent.</li>
-												<li>Utilisation d'API tierces et de bibliothèques pour améliorer les fonctionnalités de l’application. Résolution rapide des problèmes liés à l’application.</li>
-											</ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">GoLang</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React Natives</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Supabase</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Expo Go</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-										
-									</article>
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Backend</h3>
-												<div class="resume-company-name ml-md-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time">08-2024 - 11-2024</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul>
-												<li>Conception et développement d'API RESTful pour gérer efficacement les requêtes et les réponses.</li>
-												<li>Conception et maintenance des schémas de bases de données relationnelles dans MySQL.</li>
-												<li>Utilisation d'outils comme APIDOG.com pour documenter les API.</li>
-												<li>Réalisation de tests unitaires sur le serveur à l'aide de Termius.</li>
-											</ul>
-											<a href="https://kuda-ai.com/" target="_blank" rel="noopener noreferrer">Site Web de Kuda</a>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées:</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-												
-												
-											</ul>
-										</div>
-										
-									</article>
-									
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Chef de Projet
-												</h3>
-												<div class="resume-company-name ml-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time">12-2023 - 08-2024</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul> <li>Définition de la Portée du Projet : Travailler en étroite collaboration avec les fondateurs et les parties prenantes pour définir les objectifs du projet, les livrables, les délais et les critères de succès.</li>
-												 <li>Planification des Sprints : Diriger les sessions de planification des sprints, en veillant à ce que l'équipe ait des tâches claires et exploitables et comprenne les priorités.</li> 
-												 <li>Revues et Rétrospectives des Itérations : Effectuer des revues et des rétrospectives régulières pour évaluer les progrès, recueillir des retours d'information et améliorer continuellement les processus.</li> 
-												 <li>Collaboration Équipe : Faciliter la collaboration entre le développement, le design, le marketing et les ventes pour garantir que les objectifs du projet sont atteints de manière cohérente.</li> </ul>
-											<a href="https://DigitalNativess.team/">Digital Natives Web Site</a>
-										</div>
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
-												</h3>
-												<div class="resume-company-name ml-auto">Digital Natives</div>
-											</div>
-											<div class="resume-position-time">02-2023 - 11-2023</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul> <li>Développer le backend pour une application web similaire à Airbnb en utilisant Node.js, Express.js et Sequelize. Implémenter des APIs telles que OpenAI et FastForex.</li> 
-												<li>Effectuer des tests unitaires sur le serveur en utilisant Termius.</li> 
-												<li>Documenter le projet en utilisant APIDOG.com.</li>
-												 <li>Développer un tableau de bord administrateur avec un modèle Material UI.</li> </ul>
-											<a href="http://superhost.com.tn">superhost.com.tn</a>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article class="resume-timeline-item position-relative">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Freelance
-													</h3>
-													<div class="resume-company-name ml-auto">08-2022 - 10-2023</div>
-
-											</div>
-											<h3 class="resume-position-title  mb-1">Projet 1 : Tableau de bord de magasin de ventes 
-												<small class="text-muted">Développeur Full-Stack</small></h3>
-											
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul> <li>Développer le backend pour un tableau de bord administrateur en utilisant Node.js, Express.js et Sequelize.</li> 
-												<li>Développer un tableau de bord administrateur avec un modèle Material UI.</li> </ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Material UI</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article >
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title  mb-1">Projet 2 : Tawelti
-													<small class="text-muted">Développeur Full-Stack</small></h3>
-												</h3>
-												<div class="resume-company-name ml-auto">RebootKamp (RBK)</div>
-											</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<ul> <li>Intégrer Cloudinary avec React Natives et Google Maps.</li> 
-												<li>Développer le backend pour l'application mobile en utilisant Node.js, Express.js et Sequelize.</li> 
-												<li>Concevoir et développer un tableau de bord administrateur.</li> 
-												<li>Collaborer à l'analyse des données et améliorer les requêtes SQL de bases de données à fort volume.</li> </ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
-											<ul class="list-inline">
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React Natives</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">NodeJS</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Express</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">Sequelize</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JWT</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-									<article class="resume-timeline-item position-relative pb-5">
-										<div class="resume-timeline-item-header mb-2">
-											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Développeur Full-Stack
-												</h3>
-												<div class="resume-company-name ml-auto">PROMOCUISINE ( Cuisina + Marmotek)</div>
-											</div>
-											<div class="resume-position-time">06-2020 - 08-2022</div>
-										</div>
-										<div class="resume-timeline-item-desc">
-											<!-- <p>
-												For almost two years I was working for an American Software Development Company.
-											</p> -->
-											<ul> <li>Affiche les principaux indicateurs de vente tels que les ventes totales, le nombre d'affaires conclues et les produits les plus performants.</li> 
-												<li>Montre les représentants commerciaux les plus performants en fonction de divers critères.</li> 
-												<li>Une section pour gérer la liste des produits/services, y compris les détails tels que les prix et les descriptions.</li> </ul>
-											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies utilisées :</h4>
-											<ul class="list-inline">
-												
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">JavaScript</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="badge badge-primary badge-pill">React</span>
-												</li>
-											</ul>
-										</div>
-									</article>
-								
-								
-								</div>
-							</div>
-						</section>
-						<!-- Other projects -->
-					
-					</div>
-					<!-- Right side -->
-					<div class="col-lg-3">
-						<!-- Language skills -->
-						<section class="resume-section language-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Langue</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled resume-lang-list">
-									<li>
-										<span class="resume-lang-name font-weight-bold">Français</span>
-										<div class="resume-degree-org">Courant</div>
-									</li>
-									<li class="mb-2">
-										<span class="resume-lang-name font-weight-bold">Anglais</span>
-										<div class="resume-degree-org">Courant</div>
-									</li>
-									<li class="mb-2">
-										<span class="resume-lang-name font-weight-bold">Arabe</span>
-										<div class="resume-degree-org">Langue Maternelle</div>
-									</li>
-								</ul>
-							</div>
-						</section>
-						<!-- Education -->
-						<section class="resume-section education-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Éducation</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled">
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Full Stack Javascript Developer</div>
-										<div class="resume-degree-org">RebootKamp (RBK)</div>
-										<div class="resume-degree-org">08/2022 - 02/2023</div>
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Master en gestion de la qualité, de la sécurité et de l'environnement</div>
-										<div class="resume-degree-org">Leaders University -Tunisia</div>
-										<div class="resume-degree-org">09/2014 - 10/2016</div>
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">
-											Licence en économie internationale et finance</div>
-										<div class="resume-degree-org">FSEG - Tunisia</div>
-										<div class="resume-degree-org">09/2010 - 06/2013</div>
-									</li>
-									<li class="mb-2">
-										<div class="resume-degree font-weight-bold">Baccalauréat en Economie & Gestion</div>
-										<div class="resume-degree-org">Lycée 7 November- Tunisia</div>
-										<div class="resume-degree-org">09/2009 - 06/2010</div>
-									</li>
-									
-								</ul>
-							</div>
-						</section>
-						<!-- Skills  -->
-						<section class="resume-section skills-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Development Stack
-							</h2>
-							<div class="resume-section-content">
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Langages de Programmation
-									</h4>
-									<ul class="list-unstyled mb-4">
-										<li class="mb-2"></li>
-											<div class="resume-skill-name">GoLang</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Python</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">JavaScript</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">TypeScript</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-									
-									</ul>
-								</div>
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Bibliothèques & Frameworks Frontend
-									</h4>
-									<ul class="list-unstyled mb-4">
-										<li class="mb-2">
-											<div class="resume-skill-name">React Natives / React</div>
-											
-												<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-											
-											
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Next.js</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										
-									
-									</ul>
-								</div>
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Frameworks & Bases de Données Backend
-									</h4>
-									<ul class="list-unstyled">
-										<li class="mb-2">
-											<div class="resume-skill-name">Node JS</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">Express JS</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">MYSQL, Sequelize</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name">SupaBase</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-										<li class="mb-2">
-											<div class="resume-skill-name"> MongoDB</div>
-											<div class="progress-bar theme-progress-bar-dark" role="progressbar"
-													style="width: 100%; height: 2px;" aria-valuenow="25" aria-valuemin="0"
-													aria-valuemax="100"></div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="resume-skill-item">
-									<h4 class="resume-skills-cat font-weight-bold">Divers</h4>
-									<ul class="list-inline">
-										<li class="list-inline-item"><span class="badge badge-light">Git</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Unlayer</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Termius</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">phpMyAdmin</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">ApiDog</span></li>
-										<li class="list-inline-item"><span class="badge badge-light">Jira</span></li>
-
-									</ul>
-								</div>
-							</div>
-						</section>
-						<!-- <section class="resume-section reference-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled resume-awards-list">
-									<li class="mb-2 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Lorem</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque
-											eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-										</div>
-									</li>
-									<li class="mb-0 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Ipsum</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec,
-											pellentesque.</div>
-									</li>
-								</ul>
-							</div>
-						</section> -->
-						<!-- Hobbies -->
-						<section class="resume-section interests-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Compétences</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled"> 
-									<li class="mb-1">Résolution de problèmes</li> 
-									<li class="mb-1">Travail en équipe</li>
-									<li class="mb-1">communication</li>
-									 <li class="mb-1">Créativité</li>
-									 <li class="mb-1">Interaction avec les clients</li> 
-									 <li class="mb-1">Documentation</li> 
-									<li class="mb-1">Gestion de projet</li> </ul>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</article>
-
-	<script>
-		document.getElementById('toggle-cv').addEventListener('click', function() {
-			document.getElementById('english-cv').style.display = 'none';
-			document.getElementById('french-cv').style.display = 'block';
-		});
-
-		document.getElementById('toggle-cv-back').addEventListener('click', function() {
-			document.getElementById('french-cv').style.display = 'none';
-			document.getElementById('english-cv').style.display = 'block';
-		});
-	</script>
+        document.getElementById('download-pdf-fr').addEventListener('click', function() {
+            const element = document.getElementById('french-cv');
+            const opt = {
+                margin: 10,
+                filename: 'Mohamed_Dhia_Ben_Hassine_Resume_FR.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            html2pdf().from(element).set(opt).save();
+        });
+    </script>
 </body>
 </html>
